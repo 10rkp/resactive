@@ -1,0 +1,663 @@
+/*Global CSS*/
+
+body {
+
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+
+    margin-bottom: 0;
+}
+
+/*Header Section Starts*/
+
+header {
+    background: url(../images/banner.png);
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+}
+
+.navbar {
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navbar .nav-item {
+    margin: 0 12px;
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff;
+    padding: 8px 30px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.navbar .nav-item .nav-link:after {
+
+    content: "";
+    position: absolute;
+    background: #e84545;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    transition: 0.5s linear;
+}
+
+
+.navbar .nav-item .nav-link:before {
+
+    content: unset;
+    position: absolute;
+    background: #e84545;
+    width: 0%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    transition: 0.6s linear;
+}
+.navbar .nav-item .nav-link:hover:after {
+
+    width: 47%;
+}
+
+.navbar .nav-item .nav-link:hover:before {
+
+    width: 47%;
+}
+
+.navbar .nav-item.active .nav-link{
+    color: #e84545;
+}
+
+.navbar .nav-item.active .nav-link:after {
+
+    content: unset;
+    position: absolute;
+    background: #e84545;
+    width: 43%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    transition: 0.5s linear;
+}
+
+
+.navbar .nav-item.active .nav-link:before {
+
+    content: unset;
+    position: absolute;
+    background: #e84545;
+    width: 43%;
+    height: 2px;
+    right: 0;
+    bottom: 0;
+    transition: 0.6s linear;
+}
+
+.navbar .nav-item .nav-link:hover{
+    color: #e84545;
+}
+
+.hero-area{
+    text-align: center;
+    color: #fff;
+    margin-top: 250px;
+}
+
+.hero-area h1{
+    font-family: "Open Sans" , sans-serif;
+    font-size: 56px;
+    font-weight: 650;
+    margin-bottom: 25px;
+}
+.hero-area p{
+
+    line-height: 1.7;
+    margin-bottom: 50px;
+    font-size: 17px;
+}
+.hero-area .btn-cta {
+    color:#fff; 
+    background-color: #e84545;
+    border-color: #e84545;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 12px;
+
+}
+.hero-area .btn-cta:hover {
+
+    background-color: #ce0707;
+    border-color: #ce0707;
+
+}
+
+.service{
+    padding: 80px 0;
+}
+
+.service .box{
+
+    text-align: center;
+    margin: 30px 15px;
+}
+
+.service .box img{
+
+    margin-bottom: 35px;
+}
+
+.service .box h4{
+
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.service .box p{
+
+    font-size: 17px;
+    text-align: center;
+}
+
+
+/*Gallery CSS*/
+
+.gallery{}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img{
+
+    transition: all 0.4s;
+    width: 100%;
+}
+
+.gallery-item .hover-box {
+    position: absolute;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(232, 69, 69, 0.82);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s;
+
+}
+.gallery-item .hover-box h4{
+    font-weight: 700;
+    margin-top: 32%;
+    transform: translateX(-170%);
+    transition: all 0.4s;
+}
+.gallery-item .hover-box p{
+
+    transform: translateX(170%);
+    transition: all 0.4s;
+}
+
+.gallery-item:hover img{
+
+    transform: scale(1.4);
+}
+
+.gallery-item:hover .hover-box{
+
+    opacity: 1;
+}
+
+.gallery-item:hover .hover-box h4{
+
+    transform: translateX(0);
+}
+
+.gallery-item:hover .hover-box p{
+
+    transform: translateX(0);
+}
+
+
+/*Team section CSS*/
+
+.team{
+    padding: 115px 0;
+    padding-bottom: 62px;
+}
+.team .team-box{
+    margin-bottom: 50px;
+}
+.team .team-box img{
+    margin-bottom: 25px;
+}
+.team .team-box h3{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.team .team-box h5{
+    margin-bottom: 25px;
+    color: #e84545;
+    font-size: 18px;
+}
+.team .team-box p{
+
+      margin-bottom: 20px;
+
+}
+.team .team-box .nav-item{
+    border: 1px solid #c6cacc;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.team .team-box .nav-item .nav-link{
+    color: #c6cacc;
+}
+
+.team .team-box .nav-item:hover{
+    border: 1px solid #e84545;
+    background-color: #e84545;
+}
+
+.team .team-box .nav-item .nav-link:hover{
+    color: #fff;
+}
+
+ 
+/*Download section CSS*/
+.download {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+.download h3{
+
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.download p{
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.download .btn-custom{
+    color: #fff;
+    background-color: #e84545;
+    border-color: #e84545;
+    padding: 10px 60px;
+    border-radius: 5px;   
+}
+
+.download .btn-custom:hover{
+   
+    color: #fff;
+    background-color: #ff0019;
+    border-color: #ff0019;
+}
+
+
+/*Footer section CSS*/
+
+footer{
+    background-color: #3a3e64;
+    padding: 100px 0;
+    padding-bottom: 62px;
+}
+footer .box{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px;
+}
+footer .box h5{
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+footer .box p{
+    color: #9d9fb2;
+    
+}
+footer .box .nav-item{
+
+    border: 2px solid #fff;
+    margin: 0 5px;
+    border-radius: 2px;
+    transition: all 0.5s;
+    } 
+footer .box .nav-item .nav-link{
+    color: #fff;
+}
+footer .box .nav-link{
+    color: #fff;
+}
+
+footer .box .nav-item:hover{
+    border: 1px solid #e84545;
+    background-color: #e84545;
+}
+
+footer .box .nav-item .nav-link:hover{
+    color: #fff;
+}
+
+/*Footer bottom section CSS*/
+.bottom{
+
+    background: #313454;
+    padding: 20px 0;
+    color: #9d9fb2;
+    text-align: center; 
+}
+
+.bottom p{
+    font-size: 15px;
+}
+
+
+/*Responsive CSS*/
+
+
+@media (min-width: 0px) and (max-width: 575px){
+
+.navbar .nav-item .nav-link{
+      padding: 10px 0;
+}
+
+.navbar .nav-item.active .nav-link::after {
+     width: 20%;   
+}
+
+.navbar .nav-item.active .nav-link::before {
+    content: unset;
+}
+
+.navbar .nav-item .nav-link:hover::after {
+    width: 20%;
+}
+
+.navbar .nav-item .nav-link:hover::before {
+    content:unset;
+}
+
+header{
+    height: 72vh;
+}
+
+.hero-area {
+    margin-top: 100px;
+}
+
+.hero-area h1 {
+    
+    font-size: 33px;
+    margin-bottom: 25px;
+}
+
+.hero-area p {
+    margin-bottom: 50px;
+    line-height: 1.5;
+    font-size: 15px;
+    padding: 0 6%;
+}
+
+.team {
+    padding-bottom: 62px;
+}
+
+.team .team-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+.gallery-item .hover-box h4 {
+    margin-top: 31%;
+}
+
+footer {
+    padding-bottom: 37px;
+}
+
+footer .box{
+    margin-bottom: 50px;
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+
+    .navbar .nav-item .nav-link{
+     padding: 10px 0;
+}
+
+.navbar .nav-item.active .nav-link::after {
+     width: 20%;   
+}
+
+.navbar .nav-item.active .nav-link::before {
+    content: unset;
+}
+
+.navbar .nav-item .nav-link:hover::after {
+    width: 20%;
+}
+
+.navbar .nav-item .nav-link:hover::before {
+    content:unset;
+}
+
+header{
+   height: 95vh;
+}
+
+.hero-area {
+    margin-top: 100px;
+}
+
+.hero-area h1 {
+    font-size: 49px; 
+}
+
+.hero-area p {
+    margin-bottom: 50px;
+}
+
+.team {
+    padding-bottom: 62px;
+}
+
+.team .team-box {
+    margin-bottom: 50px;
+}
+
+
+footer {
+    padding-bottom: 62px;
+}
+
+footer .box{
+    margin-bottom: 35px;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+.navbar .nav-item .nav-link{
+    padding: 10px 0;
+}
+
+.navbar .nav-item.active .nav-link::after {
+    width: 15%;   
+}
+
+.navbar .nav-item.active .nav-link::before {
+   content: unset;
+}
+
+.navbar .nav-item .nav-link:hover::after {
+   width: 15%;
+}
+
+.navbar .nav-item .nav-link:hover::before {
+   content:unset;
+}
+
+header{
+   height: 200vh;
+}
+
+.hero-area {
+    margin-top: 100px;
+}
+
+.hero-area h1 {
+    font-size: 49px;
+    
+    
+}
+.hero-area p {
+   margin-bottom: 50px;
+}
+
+.team {
+    padding-bottom: 62px;
+}
+
+.team .team-box {
+    margin-bottom: 50px;
+}
+
+footer {
+    padding-bottom: 62px;
+}
+
+footer .box{
+    margin-bottom: 35px;
+}
+
+.gallery-item .hover-box h4 {
+    margin-top: 32%;
+}
+
+}
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+.navbar .nav-item .nav-link {
+    padding: 8px 15px;
+}
+
+.navbar .nav-item .nav-link::after {
+    content: "";
+}
+
+.navbar .nav-item .nav-link::before {
+
+    content: " ";
+
+}
+.navbar .nav-item .nav-link:hover::after {
+
+    width: 50%;
+}
+
+.navbar .nav-item .nav-link:hover::before {
+
+    width: 50%;
+}
+
+.navbar .nav-item.active .nav-link{
+    color: #e84545;
+}
+
+.navbar .nav-item.active .nav-link::after {
+
+    content: " ";
+}
+
+
+.navbar .nav-item.active .nav-link::before {
+
+   content:  " ";
+}
+
+.navbar .nav-item .nav-link:hover{
+    color: #e84545;
+}
+
+}
+
+
+@media (min-width: 1200px) and (max-width: 2200px){
+
+.navbar .nav-item .nav-link {
+    padding: 8px 15px;
+}
+.navbar .nav-item .nav-link::after {
+
+    content: "";
+}
+.navbar .nav-item .nav-link::before {
+    content: " ";
+}
+.navbar .nav-item .nav-link:hover::after {
+
+    width: 50%;
+}
+.navbar .nav-item .nav-link:hover::before {
+
+    width: 50%;
+}
+.navbar .nav-item.active .nav-link{
+    color: #e84545;
+}
+.navbar .nav-item.active .nav-link::after {
+
+    content: " ";
+}
+.navbar .nav-item.active .nav-link::before {
+
+    content:  " ";
+}
+.navbar .nav-item .nav-link:hover{
+    color: #e84545;
+}
+
+header{
+   height: 100vh;
+}
+
+.hero-area{
+    margin-top: 280px;
+}
+.hero-area h1{
+    font-size: 50px;
+    padding: 0 10%;
+}
+.hero-area p{
+    padding: 0 17%;
+}
+
+}
+
+
+
+
